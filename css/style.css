@@ -538,7 +538,7 @@ a{
 
 @media screen and (max-width: 576px){
 
-    .DownloadCv,.hireMe{
+    .DownloadCv,.hireMe,.viewWork,.downloadCV{
         width: 149px;
     }
 
