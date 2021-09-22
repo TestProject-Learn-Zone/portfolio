@@ -117,3 +117,25 @@ $(".navbar-toggler").click(function (){
         $(".navbar-collapse").addClass("show");
     }
 });
+
+const colors = $(".colors");
+let i;
+for(i=0;i<colors.length;i++){
+    colors[i].addEventListener('click',changeColor)
+}
+
+function changeColor(){
+    let color = this.getAttribute("data-color");
+    let hover = this.getAttribute("data-hover");
+    document.documentElement.style.setProperty('--primary',color);
+    document.documentElement.style.setProperty('--hover',hover);
+}
+
+function changeMode() {
+    document.body.classList.toggle("night-mode");
+    document.getElementById("mode-icon").classList.toggle("fa-sun")
+}
+
+function themeChange(){
+    $(".theme-colors").toggleClass("theme-colors-active")
+}

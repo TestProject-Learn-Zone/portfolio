@@ -1,0 +1,112 @@
+:root{
+    --night-secondary: #2b2c2c;
+    --night-secondary-soft: #3a3b3c;
+    --text-white: #ffffff;
+}
+
+body.night-mode{
+    background-color: var(--night-secondary);
+}
+
+.night-mode header .nav-link{
+    color: var(--text-white) !important;
+}
+
+.night-mode header .nav-link:hover{
+    color: var(--primary) !important;
+    transition: 0.5s;
+}
+
+.night-mode header .nav-link.active{
+    color: var(--primary) !important;
+    transition: 0.5s;
+}
+
+.night-mode header .nav-link.active:after{
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+.night-mode .home h1,.night-mode .home p{
+    color: var(--text-white);
+}
+
+.night-mode .about h1,
+.night-mode .about h3:not(.text-primary),
+.night-mode .about h5,
+.night-mode .about p:not(.text-primary),
+.night-mode .skills h1,
+.night-mode .skills h5,
+.night-mode .resume h1,
+.night-mode .resume h2,
+.night-mode .services h1,
+.night-mode .portfolio h1,
+.night-mode .contactMe h1,
+.night-mode .contactMe h3,
+.night-mode .footer p{
+    color: var(--text-white) !important;
+}
+
+.night-mode .timeline-box .icon i{
+    color: var(--night-secondary);
+}
+
+.night-mode .timeline-box .card{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white) !important;
+    box-shadow: 0 0.5rem 0.5rem rgba(255, 255, 255, 0.1) !important;
+}
+
+.night-mode .services .service-card{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white);
+    box-shadow: 0 0.5rem 0.5rem rgba(255, 255, 255, 0.07) !important;
+}
+
+.night-mode .services .service-card:hover{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2) !important;
+}
+
+.night-mode .portfolio .review-box .card{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white);
+    box-shadow: 0 0.5rem 0.5rem rgba(255, 255, 255, 0.07) !important;
+}
+
+.night-mode .portfolio .review-box .card:hover{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2) !important;
+}
+
+.night-mode .filter-btn-group .btn:not(.btn-primary){
+    background-color: var(--text-white);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2) !important;
+}
+
+.night-mode .portfolio-container .card{
+    background-color: var(--night-secondary-soft);
+}
+
+.night-mode .contactMe input,
+.night-mode .contactMe textarea,
+.night-mode .contactMe .card{
+    background-color: var(--night-secondary-soft);
+    color: var(--text-white);
+}
+
+.night-mode .contactMe input,
+.night-mode .contactMe textarea{
+    border: none;
+}
+
+.night-mode .contactMe .card h5{
+    color: var(--text-white) !important;
+}
+
+.night-mode .stuck{
+    background-color: var(--night-secondary-soft);
+    box-shadow: 0 0 5px #ffffff50;
+}
