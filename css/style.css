@@ -543,13 +543,15 @@ a{
     }
 
     .home .social{
-        left: 380px !important;
-        bottom: 180px !important;
+        /*left: 380px !important;*/
+        /*bottom: 180px !important;*/
+        display: none;
     }
 
     .scroll-to-about{
-        right: -360px;
-        bottom: 100px;
+        /*right: -360px;*/
+        /*bottom: 100px;*/
+        display: none;
     }
 
     .about .row.vh-100{
