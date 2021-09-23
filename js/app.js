@@ -139,3 +139,9 @@ function changeMode() {
 function themeChange(){
     $(".theme-colors").toggleClass("theme-colors-active")
 }
+
+$(window).on("load",function () {
+    $(".loader-container").fadeOut(1000,function () {
+        $(this).remove();
+    });
+})

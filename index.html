@@ -1,4 +1,7 @@
 <!doctype html>
+<div class="loader-container">
+    <div class="loader"></div>
+</div>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +9,90 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Phone Myat Pyae Sone</title>
+    <style>
+        :root{
+            --loader-color: #1e88e9;
+        }
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+        }
+        .loader {
+            color: var(--loader-color);
+            font-size: 20px;
+            margin: 100px auto;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-animation: load4 1.3s infinite linear;
+            animation: load4 1.3s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        @-webkit-keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+        @keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
     <!--fontawesome-->
     <link rel="stylesheet" href="vendor/fontawesome/fontawesome-5.15.4/css/all.css">
     <!--Bootstrap-->
@@ -76,7 +163,7 @@
                                 <h1 class="mb-0 fw-bold">Hello,</h1>
                                 <h1 class="mb-0 fw-bolder">I'm <span class="typing"></span></h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, cum dicta ea et illum iure maxime necessitatibus nisi reiciendis rem totam vero voluptate! Aspernatur et, quo quos rerum saepe sed.
+                                    I'm FrontEnd Developer from Myanmar. I love Cyber Security, Linux, Capture The Flag Challenges. I also love to get new experiences and always learn from my surroundings.
                                 </p>
                                 <a class="btn btn-primary text-uppercase py-2 DownloadCv">Download CV</a>
                                 <a class="btn btn-outline-primary text-uppercase text-center hireMe">Hire Me</a>
@@ -154,7 +241,7 @@
                                 <div class="text-black wow slideInRight ani-delay-3">
                                     <h3>Hi There!</h3>
                                     <p>
-                                        I am a website designer from Myanmar, with a strong focus in UI/UX design. I love to get new experiences and always learn from my surroundings. I've done more than 50 projects. You can check it through portfolio section on this website. I looking forward to any opportunities and challenges.
+                                        My name is Phone Myat Pyae Sone. I'm 15 years old web designer and student from Myanmar. I'm currently studying at Basic Education High School, Paukkhaung(B.E.H.S Paukkhaung). I've done more than 20 projects. You can check it through the portfolio section on this website. I looking forward to any opportunities and challenges.
                                     </p>
                                     <div class="row contactInfo">
                                         <div class="col-12 col-md-12 col-lg-6">
@@ -212,7 +299,7 @@
                             <div class="counter text-center">
                                 <i class="fab fa-codepen fa-5x"></i>
                                 <h2 class="mb-0 mt-4 counter-up">
-                                    64
+                                    20
                                 </h2>
                                 <h3 class="mb-0 mt-4">Projects</h3>
                             </div>

@@ -538,18 +538,16 @@ a{
 
 @media screen and (max-width: 576px){
 
-    .DownloadCv,.hireMe{
+    .DownloadCv,.hireMe,.viewWork,.downloadCV{
         width: 149px;
     }
 
     .home .social{
-        left: 380px !important;
-        bottom: 180px !important;
+        display: none;
     }
 
     .scroll-to-about{
-        right: -360px;
-        bottom: 100px;
+        display: none;
     }
 
     .about .row.vh-100{
